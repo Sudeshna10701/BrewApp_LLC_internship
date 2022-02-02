@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  text-align: left;
+  margin: 50px;
+}
+
+.clear {
+  float: left;
+  margin-left: 30px;
+  align-items: left;
 }
 
 .App-logo {
@@ -36,3 +43,36 @@
     transform: rotate(360deg);
   }
 }
+
+.form {
+  background: #fff;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+
+.form input {
+  background: hsl(210, 36%, 96%);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.item {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 450px;
+  align-items: left;
+  border-radius: 0.20rem;
+}
+.item {
+  padding: 1rem 2rem;
+}
+.item h4 {
+  margin-bottom: 0;
+}
+ 

@@ -1,13 +1,161 @@
 body {
-  margin: 0;
+  margin: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: white;
+  color: hsl(209, 61%, 16%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing:  0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.50rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: black;
+}
+p img{
+  height:20px;
+  width: 20px;
+}
+.section {
+  width: 90vw;
+  margin: 0;
+  max-width: 500px;
+
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+    
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: left;
+  width: 1500px;
+  
+}
+
+.filter-btn {
+  background: white;
+  border-color: rgb(63, 62, 62);
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 4px;
+  letter-spacing: 1px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:  rgb(12, 12, 12);
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-radius: 20px;
+  border-width: 1px;
+  text-align: center;
+}
+.filter-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid;
+}
+
+.section-center {
+  width: 60vw;
+  max-width: 500px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items:left;
+
+}
+
+.menu-item {
+  display: grid;
+  
+  max-width: 35rem;
+}
+
+.photo {
+  object-fit:inherit ;
+  height: 200px;
+  width: 100%;
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+}
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.price {
+  color: #c59d5f;
+}
+.item-text {
+  margin-bottom: 2px;
+  padding-top: 3px;
+}
+button.item-text{
+  margin-top: 23px;
+  margin-left: 20px
+}
+
+@media screen and (min-width: 200px) {
+  .menu-item {
+    grid-template-rows: 300px 1fr;
+    border-radius: 5px;
+    width: 410px;
+    background-color: black;
+    color: white;
+
+  }
+  .photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .photo {
+    height: 150px;
+  }
 }
